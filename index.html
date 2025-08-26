@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 80px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1, h2, p {
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff4e50;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #fc913a; }
+
+    /* Hearts */
+    .hearts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .heart {
+      width: 80px;
+      height: 80px;
+      background: pink;
+      clip-path: polygon(50% 0%, 61% 11%, 75% 11%, 86% 25%, 86% 39%, 75% 52%, 50% 77%, 25% 52%, 14% 39%, 14% 25%, 25% 11%, 39% 11%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.3s;
+    }
+    .heart:hover { transform: scale(1.1); }
+    .circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.circle {
+  width: 150px;   /* Bigger size */
+  height: 150px;  /* Bigger size */
+  border-radius: 50%; /* Circle shape */
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes the image fit nicely */
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+    /* Final Section */
+    .choice-btn {
+      margin: 15px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      background: #ff4e50;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .choice-btn:hover { background: #fc913a; }
+    #typewriter {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+  color: #4b0c28;
+  font-style: italic;
+  min-height: 120px; /* keeps space reserved while typing */
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Landing Page -->
+  <section id="home">
+    <div class="circles">
+        <div class="circle" data-message="">
+            <img src="../apology website/images/fine boy.jpeg" alt="His Laugh">
+           
+          </div>
+    </div>
+    <h1>Hi Baby 💕</h1>
+    <p>This is a little piece of my heart, built just for you.</p>
+    <a href="#story" class="btn">Enter My Heart</a>
+  </section>
+
+  <!-- Our Story -->
+  <section id="story">
+    <h2>Our Story 📖</h2>
+    <p id="typewriter"></p>
+    <a href="#apology" class="btn">Keep Reading</a>
+  </section>
+
+  <!-- Apology -->
+  <section id="apology">
+    <h2>I’m Sorry 💔</h2>
+    <p>I wasn’t there when you needed me the most.  
+    I hurt you, and I hurt myself too.  
+    I can’t undo the past, but I want to make it right…  
+    if you let me.</p>
+    <a href="#notes" class="btn">Click for a Surprise</a>
+  </section>
+
+  <!-- Love Notes -->
+  
+<section id="notes">
+    <h2>Little Things I Miss About You 💌</h2>
+    <div class="circles">
+      <div class="circle" data-message="My partner in silliness 🤪❤️">
+        <img src="../apology website/images/love1.jpeg" alt="His Laugh">
+        <p>My partner in silliness 🤪❤️</p>
+      </div>
+      <div class="circle" data-message="The kiss that made my world stop 🌎❤️">
+        <img src="../apology website/images/kissing.jpeg" alt="His Laugh">
+        <p>The kiss that made my world stop 🌎❤️</p>
+      </div>
+      <div class="circle" data-message="“Even the smallest pecks felt like magic ✨”">
+        <img src="../apology website/images/peck.jpeg" alt="His Laugh">
+        <p>“Even the smallest pecks felt like magic ✨”</p>
+      </div>
+      <div class="circle" data-message="“Boyyyy, you are super hot and sexy✨✨”">
+        <img src="../apology website/images/fine boy.jpeg" alt="His Laugh">
+        <p>“Boyyyy, you are super hot and sexy✨”</p>
+      </div>
+      
+    </div>
+  
+    <!-- Where the note appears -->
+    <p id="note-message" style="margin-top:20px; font-style:italic; font-size:18px; color:#b30059;"></p>
+  
+    <a href="#future" class="btn">And More...</a>
+  </section>
+  
+
+  <!-- Future Together -->
+  <section id="future">
+    <h2>Dreaming of Us ✨</h2>
+    <p>I still imagine us hand in hand, building our future together.  
+    I want to love you better this time if you let me.</p>
+    <a href="#final" class="btn">One Last Thing</a>
+  </section>
+
+  <!-- Final Question -->
+  <section id="final">
+    <h2>Will You Give me another chance to love you, for real this time? 💖</h2>
+    <button class="choice-btn" onclick="window.location.href='https://instagram.com/quin.coco16'" target="_blank"></a>
+        Yes 💕</button>
+    <button class="choice-btn" onclick="window.location.href='https://wa.me/2347040359975' ">Let’s Talk 💬</button>
+  </section>
+  <script>
+   
+  const circles = document.querySelectorAll('.circle');
+  const messageBox = document.getElementById('note-message');
+
+  circles.forEach(circle => {
+    circle.addEventListener('click', () => {
+      messageBox.textContent = circle.getAttribute('data-message');
+    });
+  });
+
+
+    const text = `From the very first message on Instagram, something clicked.  
+  Neither of us planned it, but our hearts recognized each other instantly.  
+  You weren’t looking for love, and yet we both fell — fast and deep.  
+  That spark we felt wasn’t an accident… it was love finding its way. 💖`;
+  
+    let i = 0;
+    const speed = 50; // typing speed in ms
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("typewriter").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  
+    window.onload = typeWriter;
+  </script>
+  
+</body>
+</html>
